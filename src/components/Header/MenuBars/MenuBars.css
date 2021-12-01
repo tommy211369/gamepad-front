@@ -1,0 +1,47 @@
+.menu-bars {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border: 1px solid #ff4655;
+  background: linear-gradient(to bottom, #323336, #212223, #181919);
+  border-radius: 5px;
+  right: 10px;
+  bottom: -167px;
+  visibility: hidden;
+  z-index: 1000;
+  padding: 5px;
+}
+
+.menu-bars-2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border: 1px solid #ff4655;
+  background: linear-gradient(to bottom, #323336, #212223, #181919);
+  border-radius: 5px;
+  right: 10px;
+  bottom: -100px;
+  visibility: hidden;
+  z-index: 1000;
+  padding: 5px;
+}
+
+.menu-bars p,
+.menu-bars-2 p {
+  margin: 15px 0 35px 0;
+  font-size: 14px;
+}
+
+.menu-bars a,
+.menu-bars-2 a {
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.menu-bars a:hover,
+.menu-bars-2 a:hover {
+  background-color: #ff4655;
+}

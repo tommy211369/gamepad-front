@@ -1,0 +1,98 @@
+/*--GAME DETAILS --*/
+
+.game-details {
+  width: 49%;
+}
+
+.game-details span {
+  color: #30d33b;
+}
+
+.game-details > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.game-details > div:first-child {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.game-details > div > div {
+  width: 47%;
+}
+
+.game-details a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.game-details > div:first-child div,
+.game-details a {
+  border: 1px solid white;
+  width: 20%;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 8px;
+  transition: all 0.2s ease;
+}
+
+.game-details > div:first-child div:hover,
+.game-details a:hover {
+  cursor: pointer;
+  background-color: #ff4655;
+  text-decoration: none;
+}
+
+.game-details .title {
+  color: #9b9b9b;
+  margin-bottom: 3px;
+}
+
+.game-details .category {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 15px;
+  overflow: hidden;
+}
+
+.game-details .category p {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.game-details p {
+  font-size: 13px;
+}
+
+.game-details .game-description-mini {
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.game-details .game-description-full {
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.game-details .see-more-less {
+  color: grey;
+  font-style: oblique;
+  text-align: right;
+}
+
+.game-details .see-more-less:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

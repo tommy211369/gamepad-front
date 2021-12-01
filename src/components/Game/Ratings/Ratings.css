@@ -1,0 +1,26 @@
+/*--RATINGS--*/
+
+.ratings {
+  max-width: 500px;
+  padding: 10px;
+  margin: 30px auto;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #323336, #212223, #181919);
+}
+
+.ratings div {
+  text-align: center;
+}
+
+.ratings p:first-child {
+  text-transform: capitalize;
+  color: #ff4655;
+}
+
+.ratings p:last-child {
+  font-size: 13px;
+}
+
+.ratings p {
+  padding: 3px;
+}

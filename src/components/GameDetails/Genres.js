@@ -18,7 +18,7 @@ const Genres = ({ game }) => {
     <div>
       <p className="title">Genre</p>
 
-      <div className="platforms">
+      <div className="category">
         <p>{genres}</p>
       </div>
     </div>

@@ -1,0 +1,14 @@
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #b7b7b7;
+  padding: 20px 50px;
+}
+
+.footer a {
+  color: #ffffff;
+  line-height: 18px;
+}

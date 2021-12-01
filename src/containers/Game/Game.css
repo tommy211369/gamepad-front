@@ -1,0 +1,21 @@
+/* GAME */
+.game {
+  padding: 80px 50px 20px 50px;
+}
+
+.game h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.game > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game img {
+  width: 49%;
+  object-fit: cover;
+  border-radius: 10px;
+}

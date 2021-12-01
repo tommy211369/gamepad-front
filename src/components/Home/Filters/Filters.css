@@ -1,0 +1,65 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters > div {
+  display: flex;
+  align-items: center;
+}
+
+.filters > div div:first-child {
+  margin-right: 20px;
+}
+
+.filters > div div {
+  padding: 8px 10px;
+  background-color: #404040;
+  border-radius: 5px;
+  position: relative;
+}
+
+.filters > div div:hover {
+  cursor: pointer;
+}
+
+.filters > div div:hover ul {
+  display: block;
+}
+
+.filters ul {
+  display: none;
+  width: 130px;
+  height: 185px;
+  overflow: scroll;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1000;
+  background-color: #404040;
+  padding: 7px;
+  top: 33px;
+  left: 0;
+}
+
+.filters ul::-webkit-scrollbar {
+  display: none;
+}
+
+.filters ul:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters ul li {
+  margin-bottom: 9px;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.filters ul li:hover {
+  background-color: #aaaaaa;
+}
+
+.filters .sort {
+  text-transform: capitalize;
+}

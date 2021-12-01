@@ -1,0 +1,14 @@
+/*--GAME REVIEWS--*/
+
+.game-reviews {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.game-reviews h2 {
+  font-size: 19px;
+  margin-bottom: 20px;
+}

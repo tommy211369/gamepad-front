@@ -19,14 +19,14 @@ import {
 import axios from "axios";
 
 // Components
-import Home from "./containers/Home";
-import Game from "./containers/Game";
-import Favorites from "./containers/Favorites";
-import Review from "./containers/Review";
-import SignIn from "./containers/SignIn";
-import SignUp from "./containers/SignUp";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Home from "./containers/Home/Home";
+import Game from "./containers/Game/Game";
+import Favorites from "./containers/Favorites/Favorites";
+import Review from "./containers/Review/Review";
+import SignIn from "./containers/Log/SignIn";
+import SignUp from "./containers/Log/SignUp";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 library.add(
   faGamepad,
   faUser,

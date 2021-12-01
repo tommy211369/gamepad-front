@@ -1,0 +1,12 @@
+.features-details {
+  border-right: 1px solid #ff4655;
+  position: relative;
+  border-radius: 7px 0 0 7px;
+  background: linear-gradient(to bottom, #323336, #212223, #181919);
+}
+
+.features-details .gamepad-logo {
+  color: #ff4655;
+  position: absolute;
+  top: 10px;
+}

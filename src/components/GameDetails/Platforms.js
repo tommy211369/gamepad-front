@@ -17,7 +17,7 @@ const Platforms = ({ game }) => {
     <div>
       <p className="title">Platforms</p>
 
-      <div className="platforms">
+      <div className="category">
         <p>{platforms}</p>
       </div>
     </div>

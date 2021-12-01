@@ -1,0 +1,142 @@
+/* LOG - SIGNIN/SIGNUP */
+.log {
+  height: 380px;
+  margin: 90px auto 100px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.log > div {
+  width: 29%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.log .log-inputs {
+  border-left: 1px solid #ff4655;
+  border-radius: 0 7px 7px 0;
+  background: linear-gradient(to top, #323336, #212223, #181919);
+}
+
+.log > div > div {
+  padding: 5px;
+}
+
+.log > div > div > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.log h1 {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+.log p {
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 8px;
+}
+
+.log form {
+  display: flex;
+  flex-direction: column;
+}
+
+.log input {
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.error-style {
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid #ff4655;
+  outline: none;
+}
+
+.log input::placeholder {
+  font-family: inherit;
+  color: #b7b7b7;
+  font-size: 12px;
+}
+
+.log input[type="submit"] {
+  background-color: #ff4655;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.log input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.log form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.log form div input {
+  width: 40%;
+}
+
+.log form label {
+  cursor: pointer;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  width: 40%;
+}
+
+.input-file {
+  position: relative;
+}
+
+.input-file p {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 150px;
+  max-width: 140px;
+  max-height: 18px;
+  overflow: hidden;
+}
+
+.log input[type="file"] {
+  display: none;
+}
+
+.upload-icon {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  margin-top: -13px;
+  z-index: 1000;
+  color: #b7b7b7;
+}
+
+.toSignupLink {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.log a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+}
+
+.log a:hover {
+  text-decoration: underline;
+}

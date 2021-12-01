@@ -1,0 +1,61 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  border-bottom: 2px solid #ff4655;
+  position: relative;
+}
+
+.header .gamepad-logo {
+  color: #ff4655;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.logo-link {
+  display: flex;
+}
+
+.logo-link:hover {
+  cursor: pointer;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+.header a {
+  color: inherit;
+  font-size: 17px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.header .link a:nth-child(2) {
+  margin-left: 40px;
+}
+
+.header .link a:last-child {
+  background-color: #ff4655;
+  border-radius: 5px;
+}
+
+.header .link p {
+  font-size: 14px;
+}
+
+.bars {
+  display: none;
+}
+
+.bars:hover {
+  cursor: pointer;
+}

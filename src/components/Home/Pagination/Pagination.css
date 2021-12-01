@@ -1,0 +1,40 @@
+/* Pagination */
+
+.react-paginate {
+  margin: 10px auto;
+  width: max-content;
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+
+.pagination > .active > a,
+.pagination > li > a:hover {
+  background-color: #ff4655;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* une page */
+.pagination > li > a {
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.previous-page {
+  margin-right: 20px;
+}
+
+.next-page {
+  margin-left: 20px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #ff4655;
+}

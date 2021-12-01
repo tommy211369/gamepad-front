@@ -1,0 +1,85 @@
+.search-bloc {
+  width: 40%;
+  margin: 0 auto 70px auto;
+  box-sizing: border-box;
+}
+
+.search-bloc div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bloc .gamepad-logo {
+  font-size: 80px;
+  color: #ff4655;
+}
+
+.search-bloc div:first-child h1 {
+  font-size: 75px;
+}
+
+.search-bloc .last-div {
+  position: relative;
+  display: flex;
+}
+.search-bloc input {
+  border: none;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  outline: none;
+}
+
+.search-bloc input[type="text"] {
+  flex: 5;
+}
+
+.search-bloc input[type="submit"] {
+  flex: 1;
+  margin-left: 15px;
+  background-color: #ff4655;
+  color: white;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.search-bloc input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #ff8e8e;
+}
+
+.search-bloc .autocomplete-container {
+  position: absolute;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: initial;
+  z-index: 1000;
+  padding: 5px;
+  width: 305px;
+  max-height: 140px;
+  top: 65px;
+  overflow: scroll;
+}
+
+.search-bloc .autocomplete-container p {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-bloc .autocomplete-container p:hover {
+  background-color: #ff8e8e;
+  cursor: pointer;
+}
+
+.search-bloc .autocomplete-container::-webkit-scrollbar {
+  display: none;
+}
+
+.search-bloc h1 {
+  font-size: 25px;
+}

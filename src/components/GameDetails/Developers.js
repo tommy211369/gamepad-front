@@ -16,7 +16,7 @@ const Developers = ({ game }) => {
   return (
     <div>
       <p className="title">Developer</p>
-      <div className="platforms">
+      <div className="category">
         <p>{developers}</p>
       </div>
     </div>
