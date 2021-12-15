@@ -63,7 +63,7 @@ export default function SignIn({ setToken, setName }) {
       if (error.response.status === 400) {
         setErrorMessage("Wrong password");
       } else if (error.response.status === 401) {
-        setErrorMessage("Email adress unknown");
+        setErrorMessage("Unknown email address ");
       }
     }
   };
