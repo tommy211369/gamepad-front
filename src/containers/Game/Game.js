@@ -102,7 +102,7 @@ export default function Game({
   ) : (
     <div className="game">
       <h1>{game.name}</h1>
-      <div>
+      <div className="game-details-img">
         <img src={game.background_image} alt={game.name} />
 
         <GameDetails
