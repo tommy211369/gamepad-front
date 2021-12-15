@@ -1,13 +1,14 @@
 /* LOG - SIGNIN/SIGNUP */
 .log {
   height: 380px;
+  width: 100%;
   margin: 90px auto 100px auto;
   display: flex;
   justify-content: center;
 }
 
 .log > div {
-  width: 29%;
+  width: 40%;
   padding: 10px;
   box-sizing: border-box;
   display: flex;

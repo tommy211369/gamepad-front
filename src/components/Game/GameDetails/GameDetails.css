@@ -32,7 +32,8 @@
 .game-details > div:first-child div,
 .game-details a {
   border: 1px solid white;
-  width: 20%;
+  width: 145px;
+  height: 30px;
   margin-right: 20px;
   border-radius: 5px;
   padding: 8px;

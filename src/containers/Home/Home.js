@@ -116,7 +116,7 @@ export default function Home({
       // `http://localhost:4000/games?page=${page}&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
       // `https://gamepad-tommy.herokuapp.com/games?page=${page}&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
       const response = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/games?page=1&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`
+        `https://gamepad-tommy.herokuapp.com/games?page=${page}&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`
       );
 
       setDisplay(true);

@@ -71,6 +71,8 @@ function App() {
 
   const resetSearch = async () => {
     try {
+      // `https://localhost:4000/games?page=1&search=""`;
+      // `https://gamepad-tommy.herokuapp.com/games?page=1&search=""`;
       const response = await axios.get(
         `https://gamepad-tommy.herokuapp.com/games?page=1&search=""`
       );

@@ -56,18 +56,19 @@ font-family: 'Roboto', sans-serif; */
   .game > h1 {
     text-align: center;
   }
+
   .game > div {
     flex-direction: column;
     align-items: center;
   }
 
   .ratings {
-    flex-direction: row;
+    flex-direction: row !important ;
   }
 
   .game img,
   .game-details {
-    width: 100%;
+    min-width: 100%;
     margin-bottom: 20px;
   }
 
@@ -103,7 +104,7 @@ font-family: 'Roboto', sans-serif; */
   }
 
   .log > div {
-    min-width: 70%;
+    min-width: 80%;
   }
 
   .log > div:first-child {
@@ -192,6 +193,12 @@ font-family: 'Roboto', sans-serif; */
   }
 }
 
+@media (max-width: 470px) {
+  .ratings {
+    flex-direction: column !important ;
+  }
+}
+
 @media (max-width: 450px) {
   .favorites-grid {
     flex-direction: column;
@@ -200,6 +207,11 @@ font-family: 'Roboto', sans-serif; */
 
   .favorites-grid div {
     margin-bottom: 20px;
+  }
+
+  .game-details > div:first-child div,
+  .game-details a {
+    max-width: 45%;
   }
 }
 
@@ -231,7 +243,17 @@ font-family: 'Roboto', sans-serif; */
   }
 
   .home .search-bloc div:first-child h1 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .search-bloc .autocomplete-container {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pagination > li > a,
+  .pagination > li > span {
+    font-size: 10px;
   }
 }
 
@@ -248,8 +270,6 @@ font-family: 'Roboto', sans-serif; */
 @media (max-width: 340px) {
   .search-bloc .last-div {
     box-sizing: border-box;
-    width: 280px;
-    background-color: #30d33b;
   }
 
   .home .search-bloc input[type="submit"] {
