@@ -27,6 +27,7 @@ import SignIn from "./containers/Log/SignIn";
 import SignUp from "./containers/Log/SignUp";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 library.add(
   faGamepad,
   faUser,
@@ -95,6 +96,7 @@ function App() {
   return (
     <div className="app">
       <Router>
+        <ScrollToTop />
         <Header
           userToken={userToken}
           userName={userName}
