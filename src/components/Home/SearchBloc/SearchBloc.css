@@ -83,3 +83,64 @@
 .search-bloc h1 {
   font-size: 25px;
 }
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (max-width: 1124px) {
+  .search-bloc {
+    width: 50%;
+    margin: 0 auto 70px auto;
+    box-sizing: border-box;
+  }
+
+  .search-bloc div:first-child {
+    justify-content: center;
+  }
+
+  .search-bloc .gamepad-logo,
+  .search-bloc div:first-child h1 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 935px) {
+  .search-bloc {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .search-bloc {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .search-bloc div:first-child h1 {
+    font-size: 40px;
+  }
+
+  .search-bloc .autocomplete-container {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 340px) {
+  .search-bloc .last-div {
+    box-sizing: border-box;
+  }
+
+  .search-bloc input[type="submit"] {
+    margin-left: 5px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .search-bloc .gamepad-logo {
+    font-size: 50px;
+  }
+}

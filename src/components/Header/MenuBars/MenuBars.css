@@ -45,3 +45,14 @@
 .menu-bars-2 a:hover {
   background-color: #ff4655;
 }
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (max-width: 700px) {
+  .menu-bars,
+  .menu-bars-2 {
+    visibility: visible;
+  }
+}

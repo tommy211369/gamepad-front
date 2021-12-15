@@ -38,3 +38,29 @@
 .pagination > li > span {
   color: #ff4655;
 }
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (max-width: 506px) {
+  .previous-page {
+    margin-right: 0;
+  }
+
+  .next-page {
+    margin-left: 0;
+  }
+
+  .pagination > li > a,
+  .pagination > li > span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .pagination > li > a,
+  .pagination > li > span {
+    font-size: 10px;
+  }
+}

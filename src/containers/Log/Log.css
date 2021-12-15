@@ -141,3 +141,37 @@
 .log a:hover {
   text-decoration: underline;
 }
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (max-width: 640px) {
+  .log {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .log > div {
+    min-width: 80%;
+  }
+
+  .log > div:first-child {
+    border-right: none;
+    border-radius: 7px 7px 0 0;
+    border-bottom: 1px solid #ff4655;
+    padding-top: 30px;
+  }
+
+  .log > div:last-child {
+    border-left: none;
+    border-radius: 0 0 7px 7px;
+    border-top: 1px solid #ff4655;
+  }
+}
+
+@media (max-width: 430px) {
+  .log > div {
+    width: 90%;
+  }
+}

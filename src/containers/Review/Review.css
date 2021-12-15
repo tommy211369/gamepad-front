@@ -93,3 +93,19 @@
   background-color: #fff;
   color: #ff4655;
 }
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (max-width: 600px) {
+  .your-review {
+    width: 85%;
+  }
+}
+
+@media (max-width: 405px) {
+  .review {
+    width: 95%;
+  }
+}

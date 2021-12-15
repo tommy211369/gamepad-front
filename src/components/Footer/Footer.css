@@ -11,3 +11,23 @@
   color: #ffffff;
   line-height: 18px;
 }
+
+@media (max-width: 575px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    color: #b7b7b7;
+    padding: 20px 50px;
+  }
+
+  .footer p {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer p {
+    font-size: 10px;
+  }
+}

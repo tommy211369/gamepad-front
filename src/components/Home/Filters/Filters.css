@@ -63,3 +63,20 @@
 .filters .sort {
   text-transform: capitalize;
 }
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (max-width: 490px) {
+  .filters,
+  .filters > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .filters > div div {
+    margin-bottom: 10px;
+  }
+}

@@ -2,7 +2,7 @@
 import React from "react";
 import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
-import "./MenuBars";
+import "./MenuBars.css";
 
 const MenuBars = ({
   userToken,

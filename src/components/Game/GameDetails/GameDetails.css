@@ -97,3 +97,14 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (max-width: 450px) {
+  .game-details > div:first-child div,
+  .game-details a {
+    max-width: 45%;
+  }
+}

@@ -54,3 +54,13 @@
   height: 100%;
   object-fit: cover;
 }
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (max-width: 430px) {
+  .games-like h2 {
+    font-size: 15px;
+  }
+}
