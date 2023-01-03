@@ -26,9 +26,9 @@ export default function Favorites({
   const fetchFavorites = async () => {
     try {
       // `http://localhost:4000/user/favorites?token=${userToken}`;
-      // `https://gamepad-tommy.herokuapp.com/user/favorites?token=${userToken}`;
+      // `https://gamepad-backend.onrender.com/user/favorites?token=${userToken}`;
       const responseFavorites = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/user/favorites?token=${userToken}`
+        `https://gamepad-backend.onrender.com/user/favorites?token=${userToken}`
       );
 
       console.log("FAVORITES games >>> ", responseFavorites.data);
@@ -42,9 +42,9 @@ export default function Favorites({
   const handleRemove = async (id) => {
     try {
       // `http://localhost:4000/user/favorites?id=${id}`;
-      // `https://gamepad-tommy.herokuapp.com/user/favorites?id=${id}`;
+      // `https://gamepad-backend.onrender.com/user/favorites?id=${id}`;
       const response = await axios.delete(
-        `https://gamepad-tommy.herokuapp.com/user/favorites?id=${id}`,
+        `https://gamepad-backend.onrender.com/user/favorites?id=${id}`,
         {
           headers: {
             authorization: `Bearer ${userToken}`,

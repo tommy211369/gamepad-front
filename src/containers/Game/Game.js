@@ -36,23 +36,23 @@ export default function Game({
   const fetchGameData = async () => {
     try {
       // `http://localhost:4000/games/${id}`;
-      // `https://gamepad-tommy.herokuapp.com/games/${id}`;
+      // `https://gamepad-backend.onrender.com/games/${id}`;
       const response = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/games/${id}`
+        `https://gamepad-backend.onrender.com/games/${id}`
       );
 
       // if userToken : get user favorites and user reviews
       if (userToken) {
         // `http://localhost:4000/user/favorites?token=${userToken}`;
-        // `https://gamepad-tommy.herokuapp.com/user/favorites?token=${userToken}`;
+        // `https://gamepad-backend.onrender.com/user/favorites?token=${userToken}`;
         const responseAllFavorite = await axios.get(
-          `https://gamepad-tommy.herokuapp.com/user/favorites?token=${userToken}`
+          `https://gamepad-backend.onrender.com/user/favorites?token=${userToken}`
         );
 
         // `http://localhost:4000/user/review?token=${userToken}&gameId=${id}`;
-        // `https://gamepad-tommy.herokuapp.com/user/review?token=${userToken}&gameId=${id}`;
+        // `https://gamepad-backend.onrender.com/user/review?token=${userToken}&gameId=${id}`;
         const responseUserReview = await axios.get(
-          `https://gamepad-tommy.herokuapp.com/user/review?token=${userToken}&gameId=${id}`
+          `https://gamepad-backend.onrender.com/user/review?token=${userToken}&gameId=${id}`
         );
 
         // console.log("GAME userAllFavorites >> ", responseAllFavorite.data);
@@ -80,9 +80,9 @@ export default function Game({
       };
 
       // `http://localhost:4000/user/favorites`
-      // `https://gamepad-tommy.herokuapp.com/user/favorites`;
+      // `https://gamepad-backend.onrender.com/user/favorites`;
       const responseFavorites = await axios.post(
-        `https://gamepad-tommy.herokuapp.com/user/favorites`,
+        `https://gamepad-backend.onrender.com/user/favorites`,
         gameData,
         {
           headers: {

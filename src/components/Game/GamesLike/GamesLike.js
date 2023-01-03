@@ -40,9 +40,9 @@ const GamesLike = ({ game, id }) => {
       }
 
       // `http://localhost:4000/games_like?genres=${genres}&developers=${developers}`;
-      // `https://gamepad-tommy.herokuapp.com/games_like?genres=${genres}&developers=${developers}`
+      // `https://gamepad-backend.onrender.com/games_like?genres=${genres}&developers=${developers}`
       const responseGamesLike = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/games_like?genres=${genres}&developers=${developers}`
+        `https://gamepad-backend.onrender.com/games_like?genres=${genres}&developers=${developers}`
       );
 
       // console.log("GamesLike >> ", responseGamesLike.data);

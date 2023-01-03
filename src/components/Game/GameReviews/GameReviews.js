@@ -22,9 +22,9 @@ export default function GameReviews({
     const fetchGameReviews = async () => {
       try {
         // `http://localhost:4000/reviews?gameId=${id}`;
-        // `https://gamepad-tommy.herokuapp.com/reviews?gameId=${id}`;
+        // `https://gamepad-backend.onrender.com/reviews?gameId=${id}`;
         const responseReviews = await axios.get(
-          `https://gamepad-tommy.herokuapp.com/reviews?gameId=${id}`
+          `https://gamepad-backend.onrender.com/reviews?gameId=${id}`
         );
 
         console.log("Reviews");

@@ -19,8 +19,8 @@ export default function Reviews({ review, userToken, game }) {
     try {
       const response = await axios.post(
         // `http://localhost:4000/user/note?reviewId=${reviewId}&gameId=${gameId}&token=${token}&note=${note}`
-        // `https://gamepad-tommy.herokuapp.com/user/note?reviewId=${reviewId}&gameId=${gameId}&token=${token}&note=${note}`
-        `https://gamepad-tommy.herokuapp.com/user/note?reviewId=${reviewId}&gameId=${gameId}&token=${token}&note=${note}`
+        // `https://gamepad-backend.onrender.com/user/note?reviewId=${reviewId}&gameId=${gameId}&token=${token}&note=${note}`
+        `https://gamepad-backend.onrender.com/user/note?reviewId=${reviewId}&gameId=${gameId}&token=${token}&note=${note}`
       );
 
       console.log("REVIEWS note >>> ", response.data);

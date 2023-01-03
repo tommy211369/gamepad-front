@@ -49,9 +49,9 @@ export default function SignUp({ setToken, setName }) {
       }
 
       // "http://localhost:4000/signup";
-      // "https://gamepad-tommy.herokuapp.com/signup";
+      // "https://gamepad-backend.onrender.com/signup";
       const response = await axios.post(
-        "https://gamepad-tommy.herokuapp.com/signup",
+        "https://gamepad-backend.onrender.com/signup",
         formData
       );
 

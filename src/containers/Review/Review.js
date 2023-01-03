@@ -27,9 +27,9 @@ const Review = ({ userToken, userReview }) => {
   const fetchUserReview = async () => {
     try {
       // `http://localhost:4000/user/review?token=${userToken}&gameId=${id}`;
-      // `https://gamepad-tommy.herokuapp.com/user/review?token=${userToken}&gameId=${id}`;
+      // `https://gamepad-backend.onrender.com/user/review?token=${userToken}&gameId=${id}`;
       const responseUserReview = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/user/review?token=${userToken}&gameId=${id}`
+        `https://gamepad-backend.onrender.com/user/review?token=${userToken}&gameId=${id}`
       );
 
       // console.log("Review user >>> ", responseUserReview.data.review);
@@ -44,9 +44,9 @@ const Review = ({ userToken, userReview }) => {
     e.preventDefault();
     try {
       // "http://localhost:4000/reviews";
-      // "https://gamepad-tommy.herokuapp.com/reviews";
+      // "https://gamepad-backend.onrender.com/reviews";
       const response = await axios.post(
-        "https://gamepad-tommy.herokuapp.com/reviews",
+        "https://gamepad-backend.onrender.com/reviews",
         reviewData,
         {
           headers: {
@@ -65,9 +65,9 @@ const Review = ({ userToken, userReview }) => {
   const handleDeleteReview = async () => {
     try {
       // `http://localhost:4000/user/review?token=${userToken}&gameId=${id}`;
-      // `https://gamepad-tommy.herokuapp.com/user/review?token=${userToken}&gameId=${id}`;
+      // `https://gamepad-backend.onrender.com/user/review?token=${userToken}&gameId=${id}`;
       const responseReviewDelete = await axios.delete(
-        `https://gamepad-tommy.herokuapp.com/user/review?token=${userToken}&gameId=${id}`
+        `https://gamepad-backend.onrender.com/user/review?token=${userToken}&gameId=${id}`
       );
 
       // console.log(responseReviewDelete.data);

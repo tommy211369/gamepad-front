@@ -57,21 +57,21 @@ export default function Home({
   const fetchData = async () => {
     try {
       // `http://localhost:4000/games?page=${page}&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
-      // `https://gamepad-tommy.herokuapp.com/games?page=${page}&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
+      // `https://gamepad-backend.onrender.com/games?page=${page}&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
       const response = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/games?page=${page}&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`
+        `https://gamepad-backend.onrender.com/games?page=${page}&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`
       );
 
       // `http://localhost:4000/platforms`;
-      // `https://gamepad-tommy.herokuapp.com/platforms`;
+      // `https://gamepad-backend.onrender.com/platforms`;
       const responsePlatforms = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/platforms`
+        `https://gamepad-backend.onrender.com/platforms`
       );
 
       // `http://localhost:4000/genres`;
-      // `https://gamepad-tommy.herokuapp.com/genres`;
+      // `https://gamepad-backend.onrender.com/genres`;
       const responseGenres = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/genres`
+        `https://gamepad-backend.onrender.com/genres`
       );
 
       console.log("HOME");
@@ -95,9 +95,9 @@ export default function Home({
   const handleSubmitSearch = async () => {
     try {
       // `http://localhost:4000/games?page=1&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
-      // `https://gamepad-tommy.herokuapp.com/games?page=1&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
+      // `https://gamepad-backend.onrender.com/games?page=1&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
       const response = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/games?page=1&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`
+        `https://gamepad-backend.onrender.com/games?page=1&search=${inputSearch}&ordering=${ordering}&platforms=${platform}&genres=${genre}`
       );
 
       setPage(1);
@@ -114,9 +114,9 @@ export default function Home({
     try {
       setInputSearch(e.target.value);
       // `http://localhost:4000/games?page=${page}&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
-      // `https://gamepad-tommy.herokuapp.com/games?page=${page}&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
+      // `https://gamepad-backend.onrender.com/games?page=${page}&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`;
       const response = await axios.get(
-        `https://gamepad-tommy.herokuapp.com/games?page=${page}&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`
+        `https://gamepad-backend.onrender.com/games?page=${page}&search=${e.target.value}&ordering=${ordering}&platforms=${platform}&genres=${genre}`
       );
 
       setDisplay(true);
