@@ -74,7 +74,7 @@ export default function Home({
         `https://gamepad-backend.onrender.com/genres`
       );
 
-      console.log("HOME");
+      // console.log("HOME");
       setPlatforms(responsePlatforms.data.results);
       setGenres(responseGenres.data.results);
       setCount(response.data.count);
@@ -121,7 +121,7 @@ export default function Home({
 
       setDisplay(true);
       setGamesOnSearch(response.data.results);
-      console.log("HOME : games on search...");
+      // console.log("HOME : games on search...");
     } catch (error) {
       console.log(error.response);
     }

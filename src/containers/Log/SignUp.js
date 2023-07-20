@@ -26,7 +26,7 @@ export default function SignUp({ setToken, setName }) {
 
   // useEffect :
   useEffect(() => {
-    console.log("SIGNUP");
+    // console.log("SIGNUP");
     if (location.state) {
       setGameId(location.state.gameId);
     }

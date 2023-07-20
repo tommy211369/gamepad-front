@@ -23,7 +23,7 @@ export default function Reviews({ review, userToken, game }) {
         `https://gamepad-backend.onrender.com/user/note?reviewId=${reviewId}&gameId=${gameId}&token=${token}&note=${note}`
       );
 
-      console.log("REVIEWS note >>> ", response.data);
+      // console.log("REVIEWS note >>> ", response.data);
       if (response.data.message === "Like added") {
         setLikes((likes += 1));
         setReviewError("");

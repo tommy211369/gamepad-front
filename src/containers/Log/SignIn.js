@@ -22,7 +22,7 @@ export default function SignIn({ setToken, setName }) {
 
   // useEffect :
   useEffect(() => {
-    console.log("LOGIN");
+    // console.log("LOGIN");
     if (location.state) {
       setGameId(location.state.gameId);
     }

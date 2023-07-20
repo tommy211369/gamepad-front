@@ -46,7 +46,7 @@ const GamesLike = ({ game, id }) => {
       );
 
       // console.log("GamesLike >> ", responseGamesLike.data);
-      console.log("GamesLike");
+      // console.log("GamesLike");
 
       const gamesLikeArray = [];
       for (let game of responseGamesLike.data) {

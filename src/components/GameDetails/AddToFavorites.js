@@ -13,7 +13,7 @@ const AddToFavorites = ({
 }) => {
   // useEffect :
   useEffect(() => {
-    console.log("AddToFavorites");
+    // console.log("AddToFavorites");
     if (allFavorites.length > 0) {
       setGameExist(allFavorites.find((elem) => elem.gameId === game.id));
     } else if (allFavorites.length === 0) {

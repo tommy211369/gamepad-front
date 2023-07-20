@@ -17,7 +17,7 @@ export default function Favorites({
 
   // useEffect :
   useEffect(() => {
-    console.log("FAVORITES");
+    // console.log("FAVORITES");
 
     fetchFavorites();
   }, []);
@@ -31,7 +31,7 @@ export default function Favorites({
         `https://gamepad-backend.onrender.com/user/favorites?token=${userToken}`
       );
 
-      console.log("FAVORITES games >>> ", responseFavorites.data);
+      // console.log("FAVORITES games >>> ", responseFavorites.data);
       setAllFavorites(responseFavorites.data);
       setIsLoading(false);
     } catch (error) {

@@ -18,7 +18,7 @@ const Review = ({ userToken, userReview }) => {
 
   // useEffect :
   useEffect(() => {
-    console.log("REVIEW");
+    // console.log("REVIEW");
 
     fetchUserReview();
   }, [id]);

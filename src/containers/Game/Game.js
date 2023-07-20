@@ -63,7 +63,7 @@ export default function Game({
 
       // console.log("GAME details >>>> ", response.data);
       // console.log("GAME reviews >>>> ", responseReviews.data);
-      console.log("GAME");
+      // console.log("GAME");
       setGame(response.data);
       setIsLoading(false);
     } catch (error) {

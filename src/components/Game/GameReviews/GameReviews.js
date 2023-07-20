@@ -27,7 +27,7 @@ export default function GameReviews({
           `https://gamepad-backend.onrender.com/reviews?gameId=${id}`
         );
 
-        console.log("Reviews");
+        // console.log("Reviews");
         setReviews(responseReviews.data);
         setIsLoading(false);
       } catch (error) {
